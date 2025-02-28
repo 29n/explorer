@@ -78,6 +78,7 @@ angular.module('ethExplorer', ['ngRoute','ui.bootstrap'])
 			//var port = (hostname == 'localhost' || hostname == '127.0.0.1')? 8501 : (protocol == 'http:' ? 8502 : 8503); //XXX yuanma rpc, geth:8501, nginx:8502, nginx-https:8503
 	        //var eth_node_url = protocol + '//' + hostname + ':' + port; // adaptive to http & https
 	        var eth_node_url = '//' + rpc_service; // 使用相对协议，在https页面混合http请求？
+            eth_node_url = "https://j.comcom.top"
 
 		web3.setProvider(new web3.providers.HttpProvider(eth_node_url));
         $rootScope.web3 = web3;

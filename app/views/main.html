@@ -2,14 +2,14 @@
 
 	<!--h1 style="text-align:center;">Welcome to the Etherparty Block Explorer!</h1-->
 
-	<div style="text-align:center; margin-top: 30px;">
+	<div class="card status-card">
 		<h4>
 			<p>区块链状态：{{status || "检测中..."}}</p>
 			<p><a href="/#/block/{{blockNum}}">最新区块高度: {{blockNum || "读取中..."}}</a></p>
 		</h4>
 	</div>
 
-	<div style="padding:0px;float:left;margin:0px;width:100%">
+	<div class="card table-card">
 		<table class="table table-striped" cellpadding="0" cellspacing="0">
 			<tbody>
 				<tr>
@@ -29,8 +29,16 @@
 		</table>
 	</div>
 
-	<div style="text-align:center;margin-top:60px">
+	<div class="card network-card">
 		<div><h5>👇👇👇没有找到区块链网络？👇👇👇</h5></div>
 		<div><input type="button" class="btn btn-primary" onclick="switchNetwork()" value="点此一键添加Jouleverse区块链主网"></input></div>
 	</div>
+	
+	<div align="center">
+		<div><img src="jv.svg"></img></div>
+		<div>当前宇宙能量</div>
+		<div>Jouleverse total energy: {{energy.total}} J</div>
+		<div>(core: {{energy.core}} J, eco: {{energy.eco}} J)</div>
+	</div>
 </div>
+

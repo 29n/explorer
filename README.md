@@ -303,3 +303,20 @@ TODO:
 - improve: use js dialog to give jns for better compatibility and ux. contributor: decong. review-merged by Evan.
 - release: 0.10.112
 
+2025.3.26
+- improve: show correct gas fee and other tx infos whenever confirmed or unconfirmed. contributor: deconf. review-fix-merged by Evan.
+- release: 0.10.113
+
+2025.4.2
+- improve: display better energy stats
+- release: 0.10.114
+
+2025.5.13
+- improve: spin off tools/core from tools/contractx
+- new: add jnsvote to tools/contractx
+- release: 0.10.115
+
+2025.5.19
+- fix: change terminology: ciculating energy => free energy; dark energy => reserved energy.
+- release: 0.10.116
+
